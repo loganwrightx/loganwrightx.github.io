@@ -62,7 +62,7 @@ const ResumeTab = () => {
         >
           <p className="text-[#32d74b] mb-2">Access granted. Viewing resume:</p>
           <iframe
-            src="/resume.pdf"
+            src={`${import.meta.env.BASE_URL}assets/resume.pdf`}
             title="Resume"
             className="w-full min-h-[90vh] border border-[#3a3a3c] rounded-xl"
           ></iframe>
@@ -140,7 +140,7 @@ export default function App() {
       <div className="w-full max-w-6xl mx-auto pt-12 px-4 min-h-screen">
         <header className="text-center mb-10">
           <h1 className="text-4xl font-bold text-[#f5f5f7] tracking-tight">Logan Wright</h1>
-          <p className="text-[#d0d0d0] mt-2 text-lg font-light">Proficient Software Engineer • Project Showcase</p>
+          <p className="text-[#d0d0d0] mt-2 text-lg font-light">Software Engineer • Developer Profile</p>
         </header>
 
         <Tabs defaultValue="projects" className="w-full">

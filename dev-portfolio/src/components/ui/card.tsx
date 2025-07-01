@@ -12,6 +12,7 @@ export function Card({ children, className = "" }: { children: ReactNode; classN
         border border-[#444448]
         hover:shadow-xl hover:shadow-black/70
         transition-shadow duration-300
+        overflow-hidden
         ${className}
       `}
     >
@@ -22,7 +23,7 @@ export function Card({ children, className = "" }: { children: ReactNode; classN
 
 export function CardContent({ children, className = "" }: { children: ReactNode; className?: string }) {
   return (
-    <div className={`p-7 space-y-4 text-[#f5f5f7] ${className}`}>
+    <div className={`p-6 space-y-4 text-[#f5f5f7] ${className}`}>
       {children}
     </div>
   );
